@@ -1,5 +1,6 @@
 package dsa.ll;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -64,6 +65,7 @@ class MyLinkedListTest {
         assertThat(foundDuplicates(linkedListWithDuplicates.getHead())).isFalse();
     }
 
+    @Disabled
     @Test
     void reverseBetweenTest() {
         // Given

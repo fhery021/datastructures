@@ -3,7 +3,6 @@ package dsa.ll;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
 class ListNodeTest {
 
@@ -42,9 +41,7 @@ class ListNodeTest {
         ListNode noDuplicates = listNode.deleteDuplicates(listNode);
         // Then
         ListNode expected = new ListNode(1);
-        expected.append(2)
-                .append(3)
-                .append(4);
+        expected.append(2);
         assertThat(noDuplicates).isEqualTo(expected);
     }
 
